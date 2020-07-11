@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+  font-family: Poppins;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+
+
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.padding-l-r {
+  padding: 0px 15%;
+}
+
+:root {
+  font-size: 16px;
+  --pink-higher: #991428;
+  --pink: #e64961;
+  --pink-lower: #FF7F93;
+  --pink-lowest: #ffdbe0;
+  --yellow-higher: #FFAC3C;
+  --yellow: #fdb733;
+  --yellow-lower: #FFC861;
+  --yellow-fade: rgba(253,183,51,0.5);
+  --blue-higher: #0B5F63;
+  --blue: #35A9AF;
+  --blue-lower: #79F6FC;
+  --gray: #2D2D2B;
+  --gray-lower: #000;
+  --gray-fade: rgba(45,45,43,0.5);
+  --white: #fff;
+  --whiteish: #fefefe;
+  --transition-delay: 100ms;
+  --transition-delay-longer: 500ms;
+}
+
+.yellow {color: var(--yellow);}
+.pink {color: var(--pink);}
+.blue {color: var(--blue);}
+.white {color: var(--white);}
+.transparent {color: transparent}
+.stroke-white {-webkit-text-stroke: 2px var(--white);}
+.stroke-pink {-webkit-text-stroke: 2px var(--pink);}
+
+/* customizando a scrollbar */
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+body::-webkit-scrollbar-track {
+  background: var(--gray);
+}
+body::-webkit-scrollbar-thumb {
+  background: var(--pink);
+}
+
+
+/* ------------------------------------------------------------*/
+/* classes principais para alinhar itens dentro de containers */
+.left {
+  flex: 1;
+  justify-content: flex-start; 
+  display: flex;
+}
+.right {
+  flex: 1;
+  justify-content: flex-end; 
+}
+.c-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.content {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.mid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* classe para alinhar no meio verticalmente */
+.y-aim {
+  align-items: center;
+}
+/* classe para alinhar no meio horizontalmente */
+.x-aim {
+  justify-content: center;
+}
+
+
+/* ------------------------------------------------------------*/
+
+

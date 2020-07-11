@@ -1,0 +1,484 @@
+
+#carousel-section img{
+    width: 100%;
+    max-height: 80vh
+}
+
+
+hr {
+    display: block; height: 1px;
+    border: 0; 
+    margin: 0 15%; 
+    padding: 0; 
+}
+
+#carousel-section hr{
+    border-top: 1px solid var(--yellow);
+}
+#carousel-section p strong{
+    color: var(--pink);
+    font-weight: 800;
+    text-shadow: var(--gray) 1px 1px 3px; 
+}
+#carousel-section h3{
+    margin-top: -30%;
+}
+
+
+#about {
+    padding: 3rem 15%;
+    background:linear-gradient(180deg, var(--yellow-higher) 0%, var(--yellow) 100%);
+    min-height: 25vh;
+}
+
+
+#about p{
+    text-align: justify;
+    font-weight: 400;
+}
+.about-container {
+    display: flex;
+    justify-content: space-between;
+}
+#about-animation {
+    width: 200px;
+    margin-top: -8rem;
+}
+
+.secondary-text {
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--gray)
+}
+
+.main-text{
+    font-size: 5rem;
+    font-weight: 900;
+    position: relative;
+    top: -7.4rem; 
+    left: 1rem;
+}
+
+.outlined-text{
+    font-weight: 900;
+    font-size: 6.5rem;
+}
+
+.about-block {
+    border-color: var(--blue);
+    border-style: solid;
+    border-width: 8px 0 0 0;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+    margin-top: -6.5rem; 
+    padding: 50px;
+    background-color: var(--whiteish);
+}
+
+
+#achievements {
+    min-height: 15vh;
+    background:linear-gradient(180deg, var(--pink-higher) 0%, var(--pink) 100%);
+}
+
+.achievements-content {
+    padding: 3rem 15%;
+}
+
+.card-content {
+    display: flex;
+    flex: 2;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 280px;
+    width: 220px;
+    padding: 0 25px;
+    background-color: var(--whiteish);
+    border-radius: 10px;
+    box-shadow: -0.5rem 0 1rem var(--gray-fade);
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+}
+
+.card h1 {
+    font-size: 5.5rem;
+    font-weight: 900;
+    color: var(--gray);
+    transition: 0.1s ease-out;
+}
+.card h2 {
+    margin-top: -1rem;
+    color: var(--gray);
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+/* 
+qualquer card que não for o primeiro irá ter -20 margin-left 
+*/
+.card:not(:first-child) {
+    margin-left: -20px;
+}
+  
+.card div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card:hover h1{
+    color: var(--pink);
+}
+
+.card:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+}
+/* 
+o ~ significa que quando der hover em 1 card,
+o próximo card irá receber essas propriedades
+*/
+.card:hover ~ .card {
+    position: relative;
+    left: 25px;
+    transition: 0.4s ease-out;
+}
+  
+.title {
+    margin-top: 25px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: var(--blue);
+    font-weight: 900;
+}
+  
+.bar {
+    height: 5px;
+    margin-bottom: 25px;
+    width: 100%;
+    background-position: right;
+    background-size: 200%;
+}
+.bar.hundred {
+    background: linear-gradient(90deg, var(--blue) 0%, var(--pink) 25%, var(--yellow) 50%, var(--gray) 50%, var(--gray) 100%);
+    background-position: right;
+    background-size: 200%;
+    transition: all 0.4s ease-out;
+
+}
+.bar.seventy-five {
+    background: linear-gradient(90deg, var(--blue) 0%, var(--pink) 18.75%, var(--yellow) 37.5%, var(--gray) 37.5%, var(--gray) 100%);
+    background-position: right;
+    transition: all 0.3s ease-out;
+    background-size: 200%;
+}
+.bar.fifty {
+    background: linear-gradient(90deg, var(--blue) 0%, var(--pink) 12.5%, var(--yellow) 25%, var(--gray) 25%, var(--gray) 100%);
+    background-position: right;
+    background-size: 200%;
+    transition: all 0.2s ease-out;
+}
+.bar.twenty-five {
+    background: linear-gradient(90deg, var(--blue) 0%, var(--pink) 6.25%, var(--yellow) 12.5%, var(--gray) 12.5%, var(--gray) 100%);
+    background-position: right;
+    background-size: 200%;
+    transition: all 0.1s ease-out;
+}
+
+.card:hover .bar {
+    background-position: left;
+}
+
+.achievements-content-flex {
+    margin-top: -3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.second-box {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    margin-left: 50px;
+    flex: 1;
+    height: 280px;
+    width: 100%;
+    background-color: var(--whiteish);
+    border-radius: 10px;
+    box-shadow: 0rem 0 1rem var(--gray-fade);
+}
+.second-box h1 {
+    color: var(--yellow);
+    font-weight: 900;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+.second-box h1 span {
+    font-size: 3rem;
+    color: var(--pink);
+}
+.second-box h2 {
+    font-weight: 300;
+    font-size: 1.25rem;
+    color: var(--pink);
+    text-align: justify;
+}
+.second-box h2 span {
+    font-size: 0.9rem;
+    color: var(--gray);
+}
+
+#constructions {
+    margin-top: -1rem;
+    background:linear-gradient(180deg, var(--blue) 0%, var(--blue-lower) 100%);
+    margin-bottom: -1rem;
+}
+.constructions-content {
+    min-height: 30vh;
+    margin-top: -4rem;
+    padding: 0rem 15% 3rem 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+#construction-images hr{
+    border-top: 3px solid var(--pink);
+}
+#construction-images {
+    border: solid var(--yellow);
+    max-height: 41vh;
+    max-width: 70vh;
+
+}
+#construction-images img{
+    width: auto;
+    max-height: 40vh;
+}
+
+
+#construction-images p strong{
+    color: var(--yellow);
+    font-weight: 900;
+    text-shadow: var(--gray) 1px 1px 3px; 
+}
+#construction-images p{
+    color: var(--gray);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+#construction-images h3{
+    text-shadow: var(--gray) 1px 1px 3px; 
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: -30%;
+}
+
+
+.constructions-block {
+    background-color: var(--whiteish) ;
+    max-height: 41vh;
+    margin-left: 45px;
+    border-color: var(--yellow);
+    border-style: solid;
+    border-width: 8px 0 0 0;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.constructions-block h1 {
+    color: var(--pink);
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.constructions-block h1 strong{
+    color: var(--pink);
+    font-size: 2.35rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.constructions-c {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.constructions-block p {
+    color: var(--gray);
+    font-size: 1.05rem;
+    text-align: justify;
+    font-weight: 400;
+}
+
+.animation-constructions{
+    width: 180px;
+    margin: 1.5rem;
+}
+
+
+
+#contact {
+    background:linear-gradient(0deg, var(--yellow) 0%, var(--yellow-higher) 100%);
+    min-height: 30vh;
+    padding: 3rem 15%;
+}
+
+.contact-content h1{
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--gray);
+}
+.contact-content h2{
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    font-weight: 300;
+    color: var(--gray);
+}
+
+.contact-content {
+    margin-top: -8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-animation-div {
+    flex: 1;
+}
+
+#contact-animation {
+    width: 150%;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.form-control-simple input{
+    padding: 8px 10px 0px 10px;
+    background: transparent;
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    font-size: 1.1rem;
+    color: var(--gray);
+    border-color: var(--blue);
+}
+
+.form-control-simple textarea{
+    padding: 8px 10px 0px 10px;
+    background: transparent;
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    font-size: 1.1rem;
+    color: var(--gray);
+    border-color: var(--blue);
+}
+
+
+
+
+.form-control-simple label{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.2rem;  
+    margin-top: 5px;
+    font-weight: 400;
+    color: var(--gray);
+    transition: all 0.25s ease;
+}
+
+
+.form-control-simple input:focus + label, .form-control-simple input:not(:placeholder-shown) + label{
+    font-size: 13px;
+    color: var(--pink-higher);
+    margin-top: -10px;
+}
+
+
+.form-control-simple input:focus{
+    border-color: var(--yellow);
+}
+.form-control-simple textarea:focus + label, .form-control-simple textarea:not(:placeholder-shown) + label{
+    font-size: 13px;
+    color: var(--pink-higher);
+    margin-top: -10px;
+}
+
+
+.form-control-simple textarea:focus{
+    border-color: var(--yellow);
+}
+
+.form-control-simple:first-child{
+    margin-right: 25px;
+}
+.form-control-simple {
+    position: relative;
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+.form-control-group {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.contact-block {
+    flex: 2;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    min-width: 10vh;
+    min-height: 10vh;
+    padding: 25px;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.5);
+    background: linear-gradient(0deg, var(--whiteish) 0%, var(--white) 100%);
+    border-radius: 10px;
+}
+
+.main-button {
+    border: solid 3px var(--blue);
+    background-color: var(--blue);
+    color: var(--white);
+    font-weight: 700;
+    border-radius: 25px;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+.ouline-button {
+    border: solid 3px var(--blue);
+    background-color: none;
+    color: var(--blue);
+    font-weight: 700;
+    border-radius: 25px;
+    padding: 10px 40px;
+    text-transform: uppercase;
+}

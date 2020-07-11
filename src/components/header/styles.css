@@ -1,0 +1,67 @@
+.header-navbar {
+    padding: 0.75rem 15%;
+    width: 100%;
+    overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+    transition: all var(--transition-delay-longer) ease;
+}
+
+.header-navbar img {
+    width: 9rem;
+    padding: .5rem;
+    border-radius: 3px;
+    transition: all var(--transition-delay-longer) ease;
+}
+
+.header-navbar a {
+    color: var(--white);
+    text-shadow: var(--gray) 1px 1px 3px; 
+    margin-left: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.3rem 0;
+    transition: all var(--transition-delay) ease;
+}
+
+.active-link {
+    background-size: 1px 1em;
+    box-shadow:
+      inset 0 -0.175em var(--yellow);
+    transition: all var(--transition-delay) ease;
+}
+
+.header-navbar a:hover {
+    color: var(--yellow);
+    padding: 0.2rem 0 0.4rem 0;
+}
+.header-navbar.scroll {
+    background-color: var(--pink);
+    box-shadow: var(--gray) 1px 1px 5px; 
+    padding: 0.2rem 15%;
+}
+
+.header-navbar.scroll img {
+    background: none;
+    width: 7rem;
+    padding: .2rem;
+}
+
+
+.header-navbar.scroll a:hover {
+    color: var(--gray);
+    text-shadow: none;
+}
+
+.header-navbar.scroll #logo-header {
+    width: 50px;
+}
+
+#logo-header {
+    width: 70px;
+}
+
+
