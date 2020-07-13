@@ -9,6 +9,12 @@
     transition: all var(--transition-delay-longer) ease;
 }
 
+.header-navbar.scroll {
+    background-color: var(--pink);
+    box-shadow: var(--gray) 1px 1px 5px; 
+    padding: 0.2rem 15%;
+}
+
 .header-navbar img {
     width: 9rem;
     padding: .5rem;
@@ -16,12 +22,29 @@
     transition: all var(--transition-delay-longer) ease;
 }
 
+.logo-text {
+    margin-top: -0.5rem;
+    width: 130px;
+    background: url('../../assets/img/logo/default.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all var(--transition-delay) ease;
+}
+.logo-text.scroll {
+    background: url('../../assets/img/logo/scroll.svg');
+    margin-top: -0.5rem;
+    width: 130px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all var(--transition-delay) ease;
+}
+
 .header-navbar a {
-    color: var(--white);
-    text-shadow: var(--gray) 1px 1px 3px; 
+    color: var(--pink);
+    text-shadow: var(--gray) 1px 1px 0px; 
     margin-left: 2.5rem;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1.1rem;
     padding: 0.3rem 0;
     transition: all var(--transition-delay) ease;
@@ -38,11 +61,7 @@
     color: var(--yellow);
     padding: 0.2rem 0 0.4rem 0;
 }
-.header-navbar.scroll {
-    background-color: var(--pink);
-    box-shadow: var(--gray) 1px 1px 5px; 
-    padding: 0.2rem 15%;
-}
+
 
 .header-navbar.scroll img {
     background: none;
@@ -50,7 +69,9 @@
     padding: .2rem;
 }
 
-
+.header-navbar.scroll a {
+    color: var(--white);
+}
 .header-navbar.scroll a:hover {
     color: var(--gray);
     text-shadow: none;

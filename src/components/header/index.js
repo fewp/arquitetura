@@ -2,11 +2,27 @@ import React from 'react';
 import './styles.css';
 import lottie from 'lottie-web';
 import logo from '../../assets/animations/logo-scroll.json';
-import logoText from '../../assets/img/logo/simplified.svg';
 
 const Header = () => {
-    let animationContainer = React.createRef();
+    
     window.addEventListener("scroll", resizeHeaderOnScroll);
+    
+    function resizeHeaderOnScroll() {
+        const distanceY = window.pageYOffset || document.documentElement.scrollTop,
+        shrinkOn = 200,
+        logo = document.getElementById("logo-text"),
+        headerEl = document.getElementById("header");
+        if (distanceY > shrinkOn) {
+            headerEl.classList.add("scroll");
+            logo.classList.add("scroll");
+        } else {
+            headerEl.classList.remove("scroll");
+            logo.classList.remove("scroll");
+        }
+    }
+
+
+    let animationContainer = React.createRef();
 
     
     React.useEffect(() => {
@@ -16,17 +32,6 @@ const Header = () => {
         });
     })
     
-    
-    function resizeHeaderOnScroll() {
-        const distanceY = window.pageYOffset || document.documentElement.scrollTop,
-        shrinkOn = 200,
-        headerEl = document.getElementById("header");
-        if (distanceY > shrinkOn) {
-            headerEl.classList.add("scroll");
-        } else {
-            headerEl.classList.remove("scroll");
-        }
-    }
     return (
         <nav className="header-navbar" id="header">
 
@@ -34,7 +39,7 @@ const Header = () => {
                 <div ref = {animationContainer}/>
                 <div className="left">
                     <div id="logo-header" ref={animationContainer}></div>
-                    <img src={logoText} alt="Logo Text"></img>
+                    <div id="logo-text" className="logo-text"></div>
                 </div>
                  <div className="content y-aim right">
                     <a href="#header" className="active-link">Home</a>

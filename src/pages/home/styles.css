@@ -1,7 +1,46 @@
 
-#carousel-section img{
+#carousel-section {
+    height: 80vh;
     width: 100%;
-    max-height: 80vh
+    background: url('../../assets/img/svg/houses.svg');
+    background-repeat: repeat-x;
+    background-size: 30%;
+    background-position: bottom;
+    pointer-events: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#carousel-section .text{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 0 0 15%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#carousel-section .text h1 {
+    font-weight: 900;
+    font-size: 4rem;
+    text-shadow: var(--gray) 2px 2px 0px; 
+    color: var(--blue)
+}
+#carousel-section .text h2 {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--gray)
+}
+
+
+#carousel-section .svg{
+    display: flex;
+}
+#carousel-section .svg img{
+    width: 110%;
+    align-self: flex-end;
+    margin-right: -30%;
 }
 
 
@@ -12,25 +51,26 @@ hr {
     padding: 0; 
 }
 
-#carousel-section hr{
-    border-top: 1px solid var(--yellow);
-}
-#carousel-section p strong{
-    color: var(--pink);
-    font-weight: 800;
-    text-shadow: var(--gray) 1px 1px 3px; 
-}
-#carousel-section h3{
-    margin-top: -30%;
-}
-
 
 #about {
     padding: 3rem 15%;
-    background:linear-gradient(180deg, var(--yellow-higher) 0%, var(--yellow) 100%);
+    background: var(--yellow);
     min-height: 25vh;
 }
 
+#about .about-svg {
+    position: absolute;
+    right: 10%;
+    height: 260px;
+    width: 100%;
+    background: url('../../assets/img/svg/profile.svg');
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: top right;
+    pointer-events: none;
+    display: flex;
+    justify-content: space-between;
+}
 
 #about p{
     text-align: justify;
@@ -58,6 +98,7 @@ hr {
     position: relative;
     top: -7.4rem; 
     left: 1rem;
+    text-shadow: var(--gray) 2px 2px 1px; 
 }
 
 .outlined-text{
@@ -219,27 +260,29 @@ o próximo card irá receber essas propriedades
 .second-box h1 {
     color: var(--yellow);
     font-weight: 900;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    text-shadow: var(--gray) 1px 1px 1px; 
     text-transform: uppercase;
 }
 .second-box h1 span {
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--pink);
+    text-shadow: var(--gray) 1px 1px 1px; 
 }
 .second-box h2 {
     font-weight: 300;
-    font-size: 1.25rem;
-    color: var(--pink);
+    font-size: 1rem;
+    color: var(--gray);
     text-align: justify;
 }
 .second-box h2 span {
-    font-size: 0.9rem;
-    color: var(--gray);
+    font-size: 1rem;
 }
 
 #constructions {
     margin-top: -1rem;
-    background:linear-gradient(180deg, var(--blue) 0%, var(--blue-lower) 100%);
+    background-image: url('../../assets/img/pattern.png'), linear-gradient(180deg, var(--blue) 0%, var(--blue-lower) 100%);
+    background-size: 1%;
     margin-bottom: -1rem;
 }
 .constructions-content {
@@ -298,13 +341,14 @@ o próximo card irá receber essas propriedades
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
 }
 .constructions-block h1 {
     color: var(--pink);
-    font-size: 1.7rem;
+    font-size: 1.65rem;
     text-transform: uppercase;
+    text-shadow: var(--gray) 2px 2px 1px; 
     font-weight: 900;
 }
 .constructions-block h1 strong{
@@ -312,6 +356,7 @@ o próximo card irá receber essas propriedades
     font-size: 2.35rem;
     text-transform: uppercase;
     font-weight: 900;
+
 }
 .constructions-c {
     flex: 1;
@@ -324,20 +369,19 @@ o próximo card irá receber essas propriedades
 
 .constructions-block p {
     color: var(--gray);
-    font-size: 1.05rem;
+    font-size: 0.9rem;
     text-align: justify;
     font-weight: 400;
 }
 
 .animation-constructions{
     width: 180px;
-    margin: 1.5rem;
 }
 
 
 
 #contact {
-    background:linear-gradient(0deg, var(--yellow) 0%, var(--yellow-higher) 100%);
+    background: var(--yellow);
     min-height: 30vh;
     padding: 3rem 15%;
 }
@@ -349,7 +393,7 @@ o próximo card irá receber essas propriedades
     color: var(--gray);
 }
 .contact-content h2{
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-bottom: 3rem;
     font-weight: 300;
     color: var(--gray);
@@ -368,7 +412,15 @@ o próximo card irá receber essas propriedades
 }
 
 #contact-animation {
-    width: 150%;
+    margin-top: -5rem;
+    height: 536.1px;
+    background: url('../../assets/img/svg/contact.svg');
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position: center;
+    pointer-events: none;
+    display: flex;
+    justify-content: space-between;
 }
 
 #contact-form {
@@ -405,7 +457,7 @@ o próximo card irá receber essas propriedades
     position: absolute;
     top: 0;
     left: 0;
-    font-size: 1.2rem;  
+    font-size: 1rem;  
     margin-top: 5px;
     font-weight: 400;
     color: var(--gray);
@@ -416,6 +468,7 @@ o próximo card irá receber essas propriedades
 .form-control-simple input:focus + label, .form-control-simple input:not(:placeholder-shown) + label{
     font-size: 13px;
     color: var(--pink-higher);
+    font-weight: 600;
     margin-top: -10px;
 }
 
@@ -426,6 +479,7 @@ o próximo card irá receber essas propriedades
 .form-control-simple textarea:focus + label, .form-control-simple textarea:not(:placeholder-shown) + label{
     font-size: 13px;
     color: var(--pink-higher);
+    font-weight: 600;
     margin-top: -10px;
 }
 
@@ -475,7 +529,7 @@ o próximo card irá receber essas propriedades
 }
 .ouline-button {
     border: solid 3px var(--blue);
-    background-color: none;
+    background-color: transparent;
     color: var(--blue);
     font-weight: 700;
     border-radius: 25px;

@@ -24,17 +24,12 @@ body {
 
 :root {
   font-size: 16px;
-  --pink-higher: #991428;
-  --pink: #e64961;
-  --pink-lower: #FF7F93;
-  --pink-lowest: #ffdbe0;
-  --yellow-higher: #FFAC3C;
-  --yellow: #fdb733;
-  --yellow-lower: #FFC861;
-  --yellow-fade: rgba(253,183,51,0.5);
-  --blue-higher: #0B5F63;
-  --blue: #35A9AF;
-  --blue-lower: #79F6FC;
+  --pink-higher: #F280B6;
+  --pink: #F280B6;
+  --yellow-higher: #fddf33;
+  --yellow: #fddf33;
+  --blue: #05DBF2;
+  --blue-lower: #05F2F2;
   --gray: #2D2D2B;
   --gray-lower: #000;
   --gray-fade: rgba(45,45,43,0.5);

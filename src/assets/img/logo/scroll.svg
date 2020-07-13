@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="272.43" height="161" viewBox="0 0 272.43 161">
+  <g id="Logo_hover" data-name="Logo hover" transform="translate(-210 -120)">
+    <text id="UNC" transform="translate(212 233)" fill="#2d2d2b" font-size="115" font-family="Montserrat-Black, Montserrat" font-weight="800"><tspan x="0" y="0">UNC</tspan></text>
+    <text id="UNC-2" data-name="UNC" transform="translate(210 231)" fill="#fff" font-size="115" font-family="Montserrat-Black, Montserrat" font-weight="800"><tspan x="0" y="0">UNC</tspan></text>
+    <text id="ARQUITETURA" transform="translate(217.43 267.94)" fill="#2d2d2b" font-size="33.11" font-family="Poppins-Bold, Poppins" font-weight="700" letter-spacing="0.11em"><tspan x="0" y="0">A</tspan><tspan y="0" letter-spacing="0.1em">R</tspan><tspan y="0">Q</tspan><tspan y="0" letter-spacing="0.12em">U</tspan><tspan y="0" letter-spacing="0.1em">IT</tspan><tspan y="0">ET</tspan><tspan y="0" letter-spacing="0.12em">UR</tspan><tspan y="0">A</tspan></text>
+    <text id="ARQUITETURA-2" data-name="ARQUITETURA" transform="translate(216.43 266.94)" fill="#fdb733" font-size="33.11" font-family="Poppins-Bold, Poppins" font-weight="700" letter-spacing="0.11em"><tspan x="0" y="0">A</tspan><tspan y="0" letter-spacing="0.1em">R</tspan><tspan y="0">Q</tspan><tspan y="0" letter-spacing="0.12em">U</tspan><tspan y="0" letter-spacing="0.1em">IT</tspan><tspan y="0">ET</tspan><tspan y="0" letter-spacing="0.12em">UR</tspan><tspan y="0">A</tspan></text>
+    <line id="Line_4" data-name="Line 4" x2="264" transform="translate(217.5 279.5)" fill="none" stroke="#2d2d2b" stroke-width="3"/>
+    <line id="Line_3" data-name="Line 3" x2="264" transform="translate(216.5 278.5)" fill="none" stroke="#fff" stroke-width="3"/>
+  </g>
+</svg>
